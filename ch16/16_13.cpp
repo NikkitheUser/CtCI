@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+#include <def>
 class Point:
     def __init__(self, x, y):
         self.x = x
