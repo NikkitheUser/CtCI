@@ -2,7 +2,10 @@
 #include <bitset>
 #include <stdint.h>
 using namespace std;
-
+//missing number
+//our array contains ints from 0 to n. however, one number is missing.
+//this one was very tricky to work through
+//I did have to use the book to understand the method expected of me to use
 int findInt(ArrayList<BitInteger> array){
   return findInt(array,0);
 }
