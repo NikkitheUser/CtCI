@@ -5,13 +5,17 @@ using namespace std;
 #include <math.h>
 #include <assert.h>
 #include <filesystem>
+
+//word distance
+//we have a text file (not in this github) that contains random words
+//the function should find the "shortest" distance between two words
 class Word_Distance
 {
 public:
     Word_Distance(const string file_path) {
-        read_file(file_path);
-        init_matrix();
-        find_min_distances();
+        read_file(file_path);//we read the files
+        init_matrix();//text matrix
+        find_min_distances();//function that looks for the min distance
     }
 
     int find_min_distance(const string &word1, const string &word2)
