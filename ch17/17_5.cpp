@@ -1,9 +1,14 @@
 #include <iostream>
-char findLongestSubarray(char array[]){
-int deltas[]= computeDeltaArray(array);
-  int match[]= findLongestMatch(deltas);
+using namespace std;
+//Letters and Numbers
+//Given an array filled with letters and numbers, find the longest subarray with an equal number of letters and numbers
 
-  return extract(array, match[0]+1,match[1]);
+
+char findLongestSubarray(char array[]){
+int deltas[]= computeDeltaArray(array);//we can compte the 'deltas' between count of numbers and letters
+  int match[]= findLongestMatch(deltas);//this holds the pair of matching values
+
+  return extract(array, match[0]+1,match[1]); //this returns the subarrays 
 }
 int computeDeltaArray(char array[]){
   int delta=0;
